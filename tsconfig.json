@@ -1,0 +1,11 @@
+{
+  "include": ["**/*.ts", "**/*.tsx", "**/*.js"],
+  "exclude": ["node_modules", "build", "public/build"],
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "jsx": "react",
+    "checkJs": true,
+    "skipLibCheck": true,
+    "noEmit": true
+  }
+}
