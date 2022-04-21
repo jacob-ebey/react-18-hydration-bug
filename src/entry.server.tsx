@@ -16,8 +16,9 @@ export default function renderDocumentRequest(res: Response) {
       pipe(res);
     },
     onShellError(error) {
-      console.error(error);
+      res.statusCode = 500;
       res.end("Internal Server Error");
+      console.error(error);
     },
     onError(error) {
       status = 500;
