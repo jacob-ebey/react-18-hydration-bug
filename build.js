@@ -50,6 +50,7 @@ function buildClient(watch) {
       bundle: true,
       format: "esm",
       splitting: true,
+      sourcemap: true,
       outdir: "./public/build",
       publicPath: "/build/",
       watch,
